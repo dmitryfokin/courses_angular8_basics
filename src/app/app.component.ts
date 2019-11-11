@@ -6,39 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  title = 'Dynamic title';
-  number = 42;
-  arr = [1, 2, 3];
-  obj = {
-    a: 1,
-    b: {c: 2}
-  };
-
-  // obj$ = JSON.stringify(this.obj);
-
-  // img = 'https://cdn.imgbin.com/14/10/23/imgbin-react-computer-icons-redux-javascript-others-sys1f0s7BFP7wbYz2H77apPRH.jpg';
-
-  inputValue = '';
-
-  constructor() {
-  //   setTimeout(() => {
-  //     console.log('5 seconds');
-  //     this.img = 'https://im0-tub-ru.yandex.net/i?id=d7fc7d45dd62b86fc50553ecc0962fbc&n=13';
-  //   }, 5000)
-   }
-
-  onInput(event: KeyboardEvent) {
-    this.inputValue = (event.target as HTMLInputElement).value;
-  }
-  onInputF1(event: KeyboardEvent) {
-    this.inputValue = 'F1';
-  }
-  onBlur(str: string) {
-    this.inputValue = str;
-  }
-  onClick(event) {
-     console.log(event);
-     this.inputValue = this.inputValue.toUpperCase();
-  }
+  title = 'Initial 4';
+  // onInput(event: any) {
+  //   this.title = event.target.value;
+  // }
 }
