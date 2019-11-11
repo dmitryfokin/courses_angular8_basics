@@ -19,9 +19,7 @@ export class AppComponent {
 
   // img = 'https://cdn.imgbin.com/14/10/23/imgbin-react-computer-icons-redux-javascript-others-sys1f0s7BFP7wbYz2H77apPRH.jpg';
 
-  inputValue: string = ''
-
-
+  inputValue = ''
 
   constructor() {
   //   setTimeout(() => {
@@ -30,12 +28,11 @@ export class AppComponent {
   //   }, 5000)
    }
 
-   onInput(event) {
-     console.log(event);
-     this.inputValue = event.target.value;
+   onInput(event: KeyboardEvent) {
+     this.inputValue = (event.target as HTMLInputElement).value;
    }
    onClick(event) {
      console.log(event);
-     this.inputValue =this.inputValue.toUpperCase()
+     this.inputValue = this.inputValue.toUpperCase()
    }
 }

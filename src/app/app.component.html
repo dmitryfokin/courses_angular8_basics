@@ -5,7 +5,7 @@
 
 <button (click)="onClick($event)">Click me</button>
 
-<input type="text" (input)="onInput($event)">
+<input type="text" (keyup)="onInput($event)">
 <p><strong>{{inputValue}}</strong></p>
 
 <hr>
