@@ -19,7 +19,7 @@ export class AppComponent {
 
   // img = 'https://cdn.imgbin.com/14/10/23/imgbin-react-computer-icons-redux-javascript-others-sys1f0s7BFP7wbYz2H77apPRH.jpg';
 
-  inputValue = ''
+  inputValue = '';
 
   constructor() {
   //   setTimeout(() => {
@@ -28,11 +28,17 @@ export class AppComponent {
   //   }, 5000)
    }
 
-   onInput(event: KeyboardEvent) {
-     this.inputValue = (event.target as HTMLInputElement).value;
-   }
-   onClick(event) {
+  onInput(event: KeyboardEvent) {
+    this.inputValue = (event.target as HTMLInputElement).value;
+  }
+  onInputF1(event: KeyboardEvent) {
+    this.inputValue = 'F1';
+  }
+  onBlur(str: string) {
+    this.inputValue = str;
+  }
+  onClick(event) {
      console.log(event);
-     this.inputValue = this.inputValue.toUpperCase()
-   }
+     this.inputValue = this.inputValue.toUpperCase();
+  }
 }
