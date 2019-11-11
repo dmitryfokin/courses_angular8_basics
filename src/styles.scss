@@ -38,7 +38,7 @@ img {
 
 .btn {
   display: inline-block;
-  background: #333333;
+  background: linear-gradient(to top left, #333333, #ccc);
   color: #fff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -47,6 +47,8 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 5px;
+
 }
 
 .btn:hover {
